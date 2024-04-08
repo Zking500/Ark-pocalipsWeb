@@ -1,3 +1,7 @@
+.container {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    margin-top: 100px; /* Ajusta según sea necesario */
+}
 .Ima_2{
     width: 600px;
     height: 300px;
@@ -14,12 +18,15 @@
 }
 
 .barra{
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra horizontalmente los elementos dentro de la barra de navegación */
     position: sticky;
-    top: 10px;
+    top: 0;
     background-color: #333333;
     border-radius: 10px;
     padding: 10px; /* Relleno para la barra de navegación */
-    z-index: 1000;
+    z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
+    width: 100%; /* Anchura de la barra de navegación */
 }
 
 .barra ul {
@@ -33,10 +40,15 @@
 }
 
 .barra ul li a {
-    display: block; /* Establece los enlaces como elementos de bloque */
-    padding: 10px 20px; /* Ajusta el relleno del enlace */
-    text-decoration: none; /* Elimina la subrayado predeterminado del enlace */
-    color: white; /* Cambia el color del texto */
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease; /* Agrega un efecto de transición suave a todos los cambios */
+}
+
+.barra ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Cambia el color de fondo al pasar el cursor */
 }
 
 /* Estilos para encabezados */
@@ -129,6 +141,7 @@ button {
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: color;
+    scroll-behavior: smooth; /* Agrega un desplazamiento suave */
   }
   
   button:focus,
@@ -162,4 +175,30 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    margin-top: 10px; /* Ajusta según sea necesario */
+    padding: 20px; /* Agrega espacio alrededor del texto */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    border: 2px solid white; /* Agrega un borde alrededor del cuadro */
+    box-shadow: 0 0 10px rgba(255,255,255,0.5); /* Agrega una sombra al cuadro */
+}
+/* Media query para dispositivos con un ancho máximo de 600px */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Ajusta el padding para pantallas más pequeñas */
+    }
+}
+
+/* Media query para dispositivos con un ancho máximo de 1024px */
+@media (max-width: 1024px) {
+    .container {
+        margin-top: 50px; /* Ajusta el margen superior para pantallas medianas */
+    }
 }

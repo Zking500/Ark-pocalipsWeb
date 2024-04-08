@@ -5,6 +5,14 @@
     <meta charset="UFT-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ark-pocalips</title>
+    <script>
+      function agregarMargenSuperior() {
+        var secciones = document.querySelectorAll('section');
+        secciones.forEach(function(seccion) {
+          seccion.style.scrollMarginTop = '100px'; // Ajusta el valor según sea necesario
+        });
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -12,31 +20,31 @@
       <img src="imagenes/logo de zking studios.png" class="Redes" alt="Logo del equipo">
       <h1>Ark-Pocalips</h1>
     </div>
-      
     </header>
+
+    <div class="barra">
+      <ul>
+        <li><a href="#His"><button>
+          Historia
+        </button></a></li>
+        <li><a href="#ComSeJue"><button>
+          Como se juega
+        </button></a></li>
+        <li><a href="#imgDelProDelJue" ><button>
+          Imagenes del prototipo
+        </button></a></li>
+        <li><a href="#Obj"><button>
+          Objectivo
+        </button></a></li>
+        <li><a href="#redSoc"><button>
+          Redes
+        </button></a></li>
+      </ul>
+    </div>
+
     <main>
-      <div class="barra">
-        <ul>
-          <li><a href="#His"><button>
-            Historia
-          </button></a></li>
-          <li><a href="#ComSeJue"><button>
-            Como se juega
-          </button></a></li>
-          <li><a href="#imgDelProDelJue"><button>
-            Imagenes del prototipo
-          </button></a></li>
-          <li><a href="#Obj"><button>
-            Objectivo
-          </button></a></li>
-          <li><a href="#redSoc"><button>
-            Redes
-          </button></a></li>
-          
-        </ul>
-      </div>
       <h2 id="His">Historia</h2>
-      <nav>
+      <nav class="container">
         <p>Ark-Pocalips es juego que nos llevan a una isla en medio del oceano pacifico, dondo sen cuentra un <strong>ecosistema que se creia extintas</strong></p>
         <p>Con el unico problema es que la isla esta <strong>en costantes cambios</strong>, que llevaran a las criaturas a adptarse a los estos fenomenos como tambien tener que <strong>sobrevivir a los demas criaturas</strong> que los querran comer</p>
       </nav>
@@ -85,7 +93,7 @@
       <img src="imagenes/DinoTorreAcu.jpg" class="Gen" alt="torre de dino acuatico">
       </nav>
 
-      <h2 id="#Obj"> Comentario </h2>
+      <h2 id="#Obj"> Objectivo </h2>
       <nav>
       <p>En esta pagina buscamos enseñar los avances que tengamos sobre el juego y tener bien informados sobre cualquier otra cosa sobre nuestro proyectos para los arkeanos</p>
       </nav>
