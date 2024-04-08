@@ -12,3 +12,154 @@
     width: 200px;
     height: 300px;    
 }
+
+.barra{
+    position: sticky;
+    top: 10px;
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 10px; /* Relleno para la barra de navegación */
+    z-index: 1000;
+}
+
+.barra ul {
+    list-style-type: none; /* Elimina los marcadores de lista */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    margin: 0; /* Elimina el margen predeterminado de la lista */
+}
+
+.barra ul li {
+    display: inline-block; /* Muestra los elementos de la lista en línea */
+}
+
+.barra ul li a {
+    display: block; /* Establece los enlaces como elementos de bloque */
+    padding: 10px 20px; /* Ajusta el relleno del enlace */
+    text-decoration: none; /* Elimina la subrayado predeterminado del enlace */
+    color: white; /* Cambia el color del texto */
+}
+
+/* Estilos para encabezados */
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0; /* Margen superior e inferior */
+    font-family: Arial, Helvetica, sans-serif; /* Fuente */
+}
+
+h1 {
+    font-size: 36px; /* Tamaño de fuente para h1 */
+    font-weight: bold; /* Negrita */
+    color: #FFFFFF; /* Color del texto */
+}
+
+h2 {
+    font-size: 30px; /* Tamaño de fuente para h2 */
+    font-weight: bold; /* Negrita */
+    color: #FFFFFF; /* Color del texto */
+}
+
+h3 {
+    font-size: 24px; /* Tamaño de fuente para h3 */
+    font-weight: bold; /* Negrita */
+    color: #FFFFFF; /* Color del texto */
+}
+
+h4 {
+    font-size: 20px; /* Tamaño de fuente para h4 */
+    font-weight: bold; /* Negrita */
+    color: #FFFFFF; /* Color del texto */
+}
+
+h5 {
+    font-size: 18px; /* Tamaño de fuente para h5 */
+    font-weight: bold; /* Negrita */
+    color: #FFFFFF; /* Color del texto */
+}
+
+h6 {
+    font-size: 16px; /* Tamaño de fuente para h6 */
+    font-weight: bold; /* Negrita */
+    color: #FFFFFF; /* Color del texto */
+}
+
+
+p {
+    font-family: Arial, Helvetica, sans-serif; /* Utiliza una fuente legible */
+    font-size: 16px; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+    color: #ffffff; /* Color del texto */
+    margin-bottom: 20px; /* Espacio entre párrafos */
+}
+
+p:first-child {
+    margin-top: 0; /* Elimina el margen superior del primer párrafo */
+}
+
+p:last-child {
+    margin-bottom: 0; /* Elimina el margen inferior del último párrafo */
+}
+
+p strong {
+    font-weight: bold; /* Estilo en negrita para texto fuerte */
+}
+
+p em {
+    font-style: italic; /* Estilo en cursiva para texto enfatizado */
+}
+
+p a {
+    color: #ff9900; /* Color de los enlaces */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    transition: color 0.3s ease; /* Efecto de transición para el color del enlace */
+}
+
+p a:hover {
+    color: #ff6600; /* Color del enlace al pasar el cursor */
+}
+
+button {
+    font-size: 18px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  button:focus,
+  button:hover {
+    color: #fff;
+  }
+  
+  button:focus:after,
+  button:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+body {
+    background-color: #212121; /* Establecer el color de fondo */
+    color: white; /* Cambiar el color del texto para que sea legible */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
