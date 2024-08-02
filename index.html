@@ -1,74 +1,161 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <link rel="stylesheet" href="Stilo.css">
+    <meta charset="UFT-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresa de Juegos</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <title>Ark-pocalips</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.ico">
+    <script>
+      function agregarMargenSuperior() {
+        var secciones = document.querySelectorAll('section');
+        secciones.forEach(function(seccion) {
+          seccion.style.scrollMarginTop = '100px'; // Ajusta el valor según sea necesario
+        });
+      }
+    </script>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#presentacion">Presentación</a></li>
-                <li><a href="#descripciones">Descripciones</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#redes">Redes Sociales</a></li>
-            </ul>
-        </nav>
+    <div>
+      <img src="imagenes/logo de zking studios.png" class="Redes" alt="Logo del equipo">
+      <h1>Ark-Pocalips</h1>
+    </div>
     </header>
 
-    <section id="presentacion">
-        <h1>Zking-Studios</h1>
-        <p>Somos un grupo de pequeño de programadores y artistas que buscamos crear los mejores juegos</p>
-        <p>para tu youtuber, streamer, tiktoker o cualquier tipo de influencer favorito</p>
-        <p>el cual quieres que tenga un juego para el por la eternidad</p>
-    </section>
+    <div class="barra">
+      <ul>
+        <li><a href="#His"><button>
+          Historia
+        </button></a></li>
+        <li><a href="#ComSeJue"><button>
+          Como se juega
+        </button></a></li>
+        <li><a href="#imgDelProDelJue" ><button>
+          Imagenes del prototipo
+        </button></a></li>
+        <li><a href="#Obj"><button>
+          Objectivo
+        </button></a></li>
+        <li><a href="#redSoc"><button>
+          Redes
+        </button></a></li>
+      </ul>
+    </div>
 
-    <section id="descripciones">
-        <h2>Descripciones</h2>
-        <p>Aquí puedes escribir una descripción más detallada sobre la empresa.</p>
-    </section>
+    <main>
+      <h2 id="His">Historia</h2>
+      <nav class="container">
+        <p>Ark-Pocalips es juego que nos llevan a una isla en medio del oceano pacifico, dondo sen cuentra un <strong>ecosistema que se creia extintas</strong></p>
+        <p>Con el unico problema es que la isla esta <strong>en costantes cambios</strong>, que llevaran a las criaturas a adptarse a los estos fenomenos como tambien tener que <strong>sobrevivir a los demas criaturas</strong> que los querran comer</p>
+      </nav>
+      <h2 id="ComSeJue">Como se juega</h2>
+      <nav>
+        <p>Primero tendras que elegir una de los 4 tipos de dinosaurios que existen:</p>
+      </nav>
 
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <div class="proyecto">
-            <h3>Proyecto 1</h3>
-            <p>Descripción del proyecto 1.</p>
-            <div class="imagenes">
-                <img src="ruta/a/imagen1.jpg" alt="Imagen 1">
-                <img src="ruta/a/imagen2.jpg" alt="Imagen 2">
-                <img src="ruta/a/imagen3.jpg" alt="Imagen 3">
-            </div>
-        </div>
-        <div class="proyecto">
-            <h3>Proyecto 2</h3>
-            <p>Descripción del proyecto 2.</p>
-            <div class="imagenes">
-                <img src="ruta/a/imagen1.jpg" alt="Imagen 1">
-                <img src="ruta/a/imagen2.jpg" alt="Imagen 2">
-                <img src="ruta/a/imagen3.jpg" alt="Imagen 3">
-            </div>
-        </div>
-        <div class="proyecto">
-            <h3>Proyecto 3</h3>
-            <p>Descripción del proyecto 3.</p>
-            <div class="imagenes">
-                <img src="ruta/a/imagen1.jpg" alt="Imagen 1">
-                <img src="ruta/a/imagen2.jpg" alt="Imagen 2">
-                <img src="ruta/a/imagen3.jpg" alt="Imagen 3">
-            </div>
-        </div>
-    </section>
-
-    <footer id="redes">
-        <h2>Redes Sociales</h2>
-        <p>Síguenos en nuestras redes sociales:</p>
+      <h3>Tipos de dinosaurios</h3>
+      <nav>
         <ul>
-            <li><a href="https://facebook.com">Facebook</a></li>
-            <li><a href="https://twitter.com">Twitter</a></li>
-            <li><a href="https://instagram.com">Instagram</a></li>
+          <li><strong>Volador</strong>: esta rama de dinos tienden a volar y atrapar con sus hagas a los dinos enemigos para darles desbetajas como esquivar peligros</li>
+          <li><strong>Carnivor</strong>: estos dinos son capases de morder a los dinos enemigos cuasandoles daño</li>
+          <li><strong>Herbibor</strong>: son grandes y fuertes, pueden desde empujar a los demas dinos y curarse comiendo plantas</li>
+          <li><strong>Acuatico</strong>: gracias a un remolino que los lleva por la isla son capases de moverse y si lo requiere pueden esconderse debajo del agua</li>
         </ul>
+      </nav>
+
+      <h3>La isla</h3>
+      <nav>
+        <p>En la isla encontraran muchos peligros, recursos y lo necesario para <strong>evolucionar</strong>, ya que la isla esta en constante cambio sera vital que los dinosaurios sean capaces de adaptarse a su entorno</p>
+      </nav>
+      <h3>Casillas</h3>
+      <nav>
+        <p>Hambran distintas casillas en la isla las cuales otorgaran distintas ventajas y desventajas</p>
+        <ul>
+          <li><strong>Casilla de inicio</strong>: aqui empezaran los dinos</li>
+          <li><strong>Casilla de herramienta</strong>: aqui los dinos encotrar herramientas que lo ayudaran con su trabesia, desde una roca en llamas o una muslo de carne</li>
+          <li><strong>Casilla de dinohuevo</strong>: en esta se encontrar un huevo el cual les daran una vida extra o la posibilidad de evolucionar</li>
+          <li><strong>Casilla de evento canonico</strong>: esta casilla probocara que en alguna parte de la isla sufra alguna castastrofe que cambiara su ambiente de manera drastica</li>
+        </ul>
+      </nav>
+
+      <h2 id="imgDelProDelJue">Imagenes del prototipo del juego</h2>
+      <nav>
+      <p>Aqui tenemos el primer prototipo funcional, el cual solo puede hacer que se mueva el personaje hacia adelante en bse a unos dados</p>
+      <img src="imagenes/prototipo1.png" class="Ima_2" alt="primer imagen oficial del juego">
+      </nav>
+
+      <h2 id="ArtCon">Arte conseptual</h2>
+      <nav>
+      <p>Aqui tenemos la imagenes de las torres de los dinos donde estaran entoda la partida</p>
+      <img src="imagenes/DinoTorreCar.jpg" class="Gen" alt="torre de dino carnivoro">
+      <img src="imagenes/DinoTorreHer.jpg" class="Gen" alt="torre de dino hervivoro">
+      <img src="imagenes/DinoTorreVol.jpg" class="Gen" alt="torre de dino volador">
+      <img src="imagenes/DinoTorreAcu.jpg" class="Gen" alt="torre de dino acuatico">
+      </nav>
+
+      <h2 id="#Obj"> Objectivo </h2>
+      <nav>
+      <p>En esta pagina buscamos enseñar los avances que tengamos sobre el juego y tener bien informados sobre cualquier otra cosa sobre nuestro proyectos para los arkeanos</p>
+      </nav>
+
+      <h2 id="int"> Integrantes </h2>
+      <nav>
+        <p>Zking500</p>
+        <p>XxcaptainwyvxX</p>
+        <p>Hakari</p>
+        <p>Ambir</p>
+        <p>CRIsMIli</p>
+      </nav>
+
+      <h2 id="redSoc">Redes sociales</h2>
+      <ul class="example-2">
+        <li class="icon-content">
+          <a href="https://github.com/Zking500/Ark-Pocalips.git" aria-label="GitHub" data-social="github">
+            <div class="filled"></div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-github"
+              viewBox="0 0 16 16"
+              xml:space="preserve"
+            >
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+          <div class="tooltip">Juego</div>
+        </li>
+        <li class="icon-content">
+          <a href="https://www.youtube.com/@NexxuzWorld" aria-label="Youtube" data-social="youtube">
+            <div class="filled"></div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-youtube"
+              viewBox="0 0 16 16"
+              xml:space="preserve"
+            >
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+          <div class="tooltip">Nexxuz</div>
+        </li>
+      </ul>
+      
+    </main>
+    <footer>
+      <p> &copy; 2024 ARK-pocalips</p>
+      <p> &copy; 2024 Zking-Studios</p>
     </footer>
-</body>
+  </body>
 </html>
